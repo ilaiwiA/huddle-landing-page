@@ -1,0 +1,160 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft__magenta: hsl(300, 69%, 71%);
+  --ff-heading: "Poppins", sans-serif;
+  --ff-body: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: var(--violet);
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 1em;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.main_container img {
+  width: 100%;
+}
+
+section {
+  color: white;
+  text-align: center;
+}
+section h1 {
+  font-size: 1.75em;
+  font-weight: 600;
+  font-family: var(--ff-heading);
+}
+
+section p {
+  font-size: 1em;
+  font-family: var(--ff-heading);
+}
+
+.btn {
+  padding: 1em;
+  color: var(--violet);
+  border-radius: 2em;
+  width: 50%;
+}
+
+footer {
+  margin: 0 auto;
+}
+
+footer img {
+  filter: invert(100%);
+  width: 25px;
+}
+
+footer ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+  }
+
+  .container {
+    padding: 2.5em;
+  }
+
+  .wrapper {
+    gap: 5em;
+  }
+
+  .main_container {
+    flex-direction: row;
+  }
+
+  .main_container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo img {
+    width: 300px;
+  }
+
+  section {
+    text-align: left;
+  }
+
+  section h1 {
+    font-size: 2.5em;
+    font-family: var(--ff-heading);
+  }
+
+  section p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-family: var(--ff-body);
+  }
+
+  footer {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .btn {
+    font-size: 1em;
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  body {
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+  }
+
+  section h1 {
+    font-size: 5em;
+    font-family: var(--ff-heading);
+  }
+
+  section p {
+    font-size: 1.75em;
+    line-height: 1.5em;
+    font-family: var(--ff-body);
+  }
+
+  .btn {
+    font-size: 1em;
+    width: 25%;
+  }
+}
